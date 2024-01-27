@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 24, 75);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: dodgerblue;
+        }
+
+        main hr {
+            border: 0;
+            background-color: aquamarine;
+            height: 1.4px;
+            margin: auto;
+        }
+
+        .left {
+            font-size: 3rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(219, 31, 31);
+            font-size: 1.5rem;
+        }
+
+        :root {
+            --background: rgb(3, 26, 44);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            background-color: var(--background);
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 800px;
+        }
+
+        .card {
+            position: relative;
+            left: 0px;
+            width: 600px;
+            border-radius: 5px;
+            height: 400px;
+            overflow: hidden;
+            background-color: var(--background);
+            transition: 0.5s ease-in-out;
+            flex: 0.25;
+            box-shadow: 0 5px 12px rgb(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            height: 400px;
+        }
+
+        .card:hover {
+            flex: 2;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio Website</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/certificate.html">Certificates</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <span class="background">
+            <section class="gallery">
+                <article class="card">
+                    <figure>
+                        <img src="udemy_python.PNG" alt="UDEMY PYTHON"></img>
+                    </figure>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img src="internshala_webdev.PNG" alt="internshala web development"></img>
+                    </figure>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img src="devops_webdev.PNG" alt="devops web development"></img>
+                    </figure>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img src="Data_Analytics_Workshop_jobaaj.jpg" alt="Data_Analytics_Workshop_jobaaj"></img>
+                    </figure>
+                </article>
+            </section>
+        </span>
+        <footer>
+            <p>[2023]<br> <B>KUNAL APPA VEER. <br>All rights reserved.</B></p>
+        </footer>
+</body>
+
+</html>
